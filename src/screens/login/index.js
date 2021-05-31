@@ -26,7 +26,7 @@ export default () => {
         <TextInput
           style={style.input}
           placeholder="Login:"
-          placeholderTextColor="#000"
+          placeholderTextColor="#000"  
         />
         <TextInput
           style={style.input}
