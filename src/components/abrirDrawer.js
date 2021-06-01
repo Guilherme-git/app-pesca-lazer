@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {View, Image, TouchableOpacity, Text} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import { View, Image, TouchableOpacity, Text } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import AbrirDrawer from './../assets/abrirDrawer.png';
 
@@ -13,7 +13,7 @@ export default props => {
         // eslint-disable-next-line react-native/no-inline-styles
         style={{
           marginLeft: 20,
-          marginTop: 20,
+          marginTop: 10,
           marginBottom: 10,
           flexDirection: 'row',
           marginRight: 20,
@@ -41,15 +41,6 @@ export default props => {
           </Text>
         </View>
       </View>
-      <Text
-        // eslint-disable-next-line react-native/no-inline-styles
-        style={{
-          width: '100%',
-          backgroundColor: '#4cf4fa',
-          height: 1,
-          marginBottom: 20,
-        }}
-      />
     </>
   );
 };

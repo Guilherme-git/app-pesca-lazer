@@ -7,14 +7,16 @@ const style = StyleSheet.create({
     marginTop:0,
     height:250,
     width:'100%',
+    justifyContent:'center',
+    alignItems:'center',
   },
   downview:{
+    
   },
   upBackground: {
-    flex: 1,
     height:'100%',
     width:'100%',
-    position:'absolute',
+    position: 'absolute'
   },
   input: {
     backgroundColor: '#fff',
@@ -24,17 +26,14 @@ const style = StyleSheet.create({
     padding: 10,
   },
   sectionStyle: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    paddingLeft:10,
+    paddingRight:10,
     backgroundColor: '#fff',
     borderWidth: 0.7,
     borderColor: '#03a9f4',
-    height: 40,
-    width: 300,
     borderRadius: 20,
-    margin: 100,
-    marginLeft:30,
+    flexDirection:'row',
+    
   },
   imageStyle: {
     padding: 10,
@@ -51,7 +50,21 @@ const style = StyleSheet.create({
     fontWeight:'bold',
     fontSize:27,
   },
-
+  iconPesquisa: {
+    height: 25,
+    width: 25,
+    marginRight:10,
+    marginTop:10
+  },
+  cardBarco: {
+    backgroundColor: '#70A6AE',
+    height: 100,
+    width: 150,
+    padding: 10,
+    borderRadius: 20,
+    margin: 5,
+    marginLeft:15
+  }
 });
 
 export default style;
