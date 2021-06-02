@@ -8,14 +8,10 @@ import imgBackground from './../../../assets/backhomecliente.jpeg';
 import imgPesq from './../../../assets/icon-pesquisa-home.png';
 import CalendarPicker from 'react-native-calendar-picker';
 
-export default ({
-
-
-  values,
-  selectedValue,
-  setSelectedValue,
-}) => {
+export default () => {
   const [data, setData] = useState();
+  const [botaoPesca, setBotaoPesca] = useState(false);
+  const [botaoPasseio, setBotaoPasseio] = useState(false);
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -40,13 +36,38 @@ export default ({
           <Text style={style.tipoServico}>TIPO DE SERVIÇO</Text>
 
           <View style={style.containerTipoPesquisa}>
-            <TouchableOpacity active style={style.botaoPesca}>
-              <Text style={style.botaoPescaText}>Pesca</Text>
-            </TouchableOpacity>
+            
+            {botaoPesca ? //Verdadeiro
+              <TouchableOpacity
+                onPress={() => setBotaoPesca(false)}
+                style={style.botaoPescaAtivo}>
+                <Text style={style.botaoPescaTextAtivo}>Pesca</Text>
+              </TouchableOpacity>
+              : // Falso
+              <TouchableOpacity
+                onPress={() => setBotaoPesca(true)}
+                style={style.botaoPesca}>
+                <Text style={style.botaoPescaText}>Pesca</Text>
+              </TouchableOpacity>
+            }
 
-            <TouchableOpacity style={style.botaoPasseio}>
-              <Text style={style.botaoPasseioText}>Passeio</Text>
-            </TouchableOpacity>
+            {botaoPasseio ? //Verdadeiro
+              <TouchableOpacity
+                onPress={() => setBotaoPasseio(!botaoPasseio)}
+                style={style.botaoPasseioAtivo}>
+                <Text style={style.botaoPasseioTextAtivo}>Passeio</Text>
+              </TouchableOpacity>
+              : // Falso
+              <TouchableOpacity
+                onPress={() => setBotaoPasseio(!botaoPasseio)}
+                style={style.botaoPasseio}>
+                <Text style={style.botaoPasseioText}>Passeio</Text>
+              </TouchableOpacity>
+            }
+
+
+
+
           </View>
 
           <View style={style.containerCalendar}>
@@ -70,9 +91,11 @@ export default ({
 
           </View>
           <View style={style.vpesquisar}>
+
             <TouchableOpacity style={style.pesquisar}>
-              <Text style={style.botaoPasseioText,{color: '#fff'}}>PESQUISAR</Text>
+              <Text style={style.botaoPasseioText, { color: '#fff' }}>PESQUISAR</Text>
             </TouchableOpacity>
+
           </View>
 
           <BotoesFooter />

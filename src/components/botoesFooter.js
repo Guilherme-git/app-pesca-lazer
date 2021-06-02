@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
+import React,{useState} from 'react';
 import {
   View,
   TouchableOpacity,
@@ -8,8 +8,10 @@ import {
   StyleSheet,
   ScrollView,
 } from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 export default () => {
+  const navigation = useNavigation();
   return (
     <View>
       <ScrollView horizontal={true}>
@@ -22,7 +24,9 @@ export default () => {
             <Text style={style.textoBotao}>Agenda</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={style.botao}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('pesquisa cliente')}
+            style={style.botao}>
             <Image
               style={style.image}
               source={require('../assets/icon-pesquisa.png')}

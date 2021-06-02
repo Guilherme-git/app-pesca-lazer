@@ -81,19 +81,21 @@ const style = StyleSheet.create({
     marginTop: 15,
   },
   botaoPesca: {
-    backgroundColor:'#1a78c2',
+    backgroundColor:'#fff',
     justifyContent:'center',
     alignItems:'center',
     height: 50,
     flex: 1,
     borderRadius: 10,
     marginRight:5,
+    borderColor:'#1a78c2',
+    borderWidth:1,
   },
   botaopress: {
     backgroundColor:'#1a78c2',
   },
   botaoPescaText: {
-    color: '#fff',
+    color: '#1a78c2',
     fontWeight:'bold',
   },
   botaoPasseio: {
@@ -150,7 +152,6 @@ const style = StyleSheet.create({
     borderWidth: 0,
   },
   pesquisar: {
-    marginLeft:80,
     marginTop:10,
     marginBottom:10,
     backgroundColor:'#1a78c2',
@@ -165,6 +166,45 @@ const style = StyleSheet.create({
     flexDirection:'row',
     alignContent:'center',
   },
+  vpesquisar: {
+    width: '100%',
+    justifyContent:'center',
+    alignItems:'center'
+  },
+  botaoPescaAtivo: {
+    backgroundColor:'#1a78c2',
+    justifyContent:'center',
+    alignItems:'center',
+    height: 50,
+    flex: 1,
+    borderRadius: 10,
+    marginRight:5,
+    borderColor:'#1a78c2',
+    borderWidth:1,
+  },
+  botaoPescaTextAtivo: {
+    color: '#fff',
+    fontWeight:'bold',
+  },
+  botaoPasseioAtivo: {
+    backgroundColor:'#1a78c2',
+    justifyContent:'center',
+    alignItems:'center',
+    height: 50,
+    flex: 1,
+    borderRadius: 10,
+    marginRight:5,
+    borderColor:'#1a78c2',
+    borderWidth:1,
+  },
+  botaoPasseioTextAtivo: {
+    color: '#fff',
+    fontWeight:'bold',
+  },
+
+
+
+
 
 });
 
