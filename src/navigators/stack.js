@@ -9,6 +9,7 @@ import drawerBarqueiro from './barqueiro/drawer';
 
 import login from './../screens/login/index';
 import cadastro from './../screens/cadastro/index';
+import homeCliente from './../screens/cliente/home/index';
 
 export default () => {
   return (
@@ -19,6 +20,7 @@ export default () => {
       }}>
       <stack.Screen name="login" component={login} />
       <stack.Screen name="cadastro" component={cadastro} />
+      <stack.Screen name="homeCliente" component={homeCliente} />
       <stack.Screen name="drawerCliente" component={drawerCliente} />
       <stack.Screen name="drawerBarqueiro" component={drawerBarqueiro} />
     </stack.Navigator>

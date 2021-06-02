@@ -11,12 +11,12 @@ const style = StyleSheet.create({
     alignItems:'center',
   },
   downview:{
-    
+
   },
   upBackground: {
     height:'100%',
     width:'100%',
-    position: 'absolute'
+    position: 'absolute',
   },
   input: {
     backgroundColor: '#fff',
@@ -33,7 +33,7 @@ const style = StyleSheet.create({
     borderColor: '#03a9f4',
     borderRadius: 20,
     flexDirection:'row',
-    
+
   },
   imageStyle: {
     padding: 10,
@@ -54,7 +54,7 @@ const style = StyleSheet.create({
     height: 25,
     width: 25,
     marginRight:10,
-    marginTop:10
+    marginTop:10,
   },
   cardBarco: {
     backgroundColor: '#70A6AE',
@@ -63,13 +63,13 @@ const style = StyleSheet.create({
     padding: 10,
     borderRadius: 20,
     margin: 5,
-    marginLeft:15
+    marginLeft:15,
   },
   tipoServico: {
     color: '#1a78c2',
     marginTop:10,
     marginLeft:20,
-    fontWeight:'bold'
+    fontWeight:'bold',
 
   },
   containerTipoPesquisa: {
@@ -78,7 +78,7 @@ const style = StyleSheet.create({
     alignItems:'center',
     marginRight: 50,
     marginLeft:50,
-    marginTop: 15
+    marginTop: 15,
   },
   botaoPesca: {
     backgroundColor:'#1a78c2',
@@ -87,10 +87,14 @@ const style = StyleSheet.create({
     height: 50,
     flex: 1,
     borderRadius: 10,
-    marginRight:5
+    marginRight:5,
+  },
+  botaopress: {
+    backgroundColor:'#1a78c2',
   },
   botaoPescaText: {
-    color: '#fff'
+    color: '#fff',
+    fontWeight:'bold',
   },
   botaoPasseio: {
     backgroundColor:'#fff',
@@ -101,20 +105,21 @@ const style = StyleSheet.create({
     borderWidth:1,
     flex: 1,
     borderRadius: 10,
-    marginLeft:5
+    marginLeft:5,
   },
   botaoPasseioText: {
-    color: '#1a78c2'
+    color: '#1a78c2',
+    fontWeight:'bold',
   },
   containerCalendar: {
-    marginTop: 20
+    marginTop: 20,
   },
   porData: {
     color: '#1a78c2',
     marginTop:10,
     marginLeft:20,
     marginBottom:10,
-    fontWeight:'bold'
+    fontWeight:'bold',
 
   },
   porValor: {
@@ -122,14 +127,14 @@ const style = StyleSheet.create({
     marginTop:20,
     marginLeft:20,
     marginBottom:10,
-    fontWeight:'bold'
+    fontWeight:'bold',
 
   },
   containerValor: {
     flexDirection:'row',
     marginLeft:15,
     marginRight: 15,
-    marginBottom:20
+    marginBottom:20,
   },
   input: {
     borderRadius:10,
@@ -138,8 +143,29 @@ const style = StyleSheet.create({
     flex: 1,
     marginRight:5,
     marginLeft:5,
-    padding: 10
-  }
+    padding: 10,
+  },
+  selected: {
+    backgroundColor: 'coral',
+    borderWidth: 0,
+  },
+  pesquisar: {
+    marginLeft:80,
+    marginTop:10,
+    marginBottom:10,
+    backgroundColor:'#1a78c2',
+    justifyContent:'center',
+    alignItems:'center',
+    height: 50,
+    width: 200,
+    borderColor:'#1a78c2',
+    borderWidth:1,
+    flex: 1,
+    borderRadius: 25,
+    flexDirection:'row',
+    alignContent:'center',
+  },
+
 });
 
 export default style;

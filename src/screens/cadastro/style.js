@@ -16,41 +16,83 @@ const style = StyleSheet.create({
     position: 'absolute',
     opacity: 0.5,
   },
+  selectOpt:{
+    marginTop:12,
+    marginBottom:55,
+
+  },
   logo: {
+    justifyContent: 'center',
+    alignItems: 'center',
     height: 200,
     width: 200,
-  },
-  containerInput: {
-    marginTop: 20,
-  },
-  input: {
-    backgroundColor: '#fff',
-    borderRadius: 15,
-    width: 250,
-    marginTop: 10,
-    padding: 10,
-  },
-  containerDescricao: {
-    marginTop: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  textDescricao: {
-    color: '#fff',
+    marginBottom:105,
   },
   containerCadastro: {
-    marginTop: 40,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#3FCEFB',
-    width: 200,
-    height: 50,
-    borderRadius: 20,
+    backgroundColor: '#228394',
+    width: 250,
+    height: 45,
+    borderRadius: 25,
+    marginBottom: 20,
+
+  },
+  containerCadastro2: {
+    marginTop: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#228394',
+    width: 250,
+    height: 45,
+    borderRadius: 25,
     marginBottom: 20,
   },
   containerCadastroText: {
     color: '#FFF',
+    fontWeight:'bold',
   },
+
+
+
+
+  box: {
+    width: 50,
+    height: 50,
+  },
+  row: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+  },
+  button: {
+    paddingHorizontal: 8,
+    paddingVertical: 6,
+    borderRadius: 4,
+    backgroundColor: 'oldlace',
+    alignSelf: 'flex-start',
+    marginHorizontal: '1%',
+    marginBottom: 6,
+    minWidth: '48%',
+    textAlign: 'center',
+  },
+  selected: {
+    backgroundColor: '#000',
+    borderWidth: 0,
+  },
+  buttonLabel: {
+    fontSize: 12,
+    fontWeight: '500',
+    color: 'coral',
+  },
+  selectedLabel: {
+    color: 'white',
+  },
+  label: {
+    textAlign: 'center',
+    marginBottom: 10,
+    fontSize: 24,
+  },
+
 });
 
 export default style;

@@ -8,7 +8,13 @@ import imgBackground from './../../../assets/backhomecliente.jpeg';
 import imgPesq from './../../../assets/icon-pesquisa-home.png';
 import CalendarPicker from 'react-native-calendar-picker';
 
-export default () => {
+export default ({
+
+
+  values,
+  selectedValue,
+  setSelectedValue,
+}) => {
   const [data, setData] = useState();
 
   return (
@@ -34,7 +40,7 @@ export default () => {
           <Text style={style.tipoServico}>TIPO DE SERVIÇO</Text>
 
           <View style={style.containerTipoPesquisa}>
-            <TouchableOpacity style={style.botaoPesca}>
+            <TouchableOpacity active style={style.botaoPesca}>
               <Text style={style.botaoPescaText}>Pesca</Text>
             </TouchableOpacity>
 
@@ -62,6 +68,11 @@ export default () => {
               />
             </View>
 
+          </View>
+          <View style={style.vpesquisar}>
+            <TouchableOpacity style={style.pesquisar}>
+              <Text style={style.botaoPasseioText,{color: '#fff'}}>PESQUISAR</Text>
+            </TouchableOpacity>
           </View>
 
           <BotoesFooter />
