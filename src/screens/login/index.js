@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
 import {
   Text,
@@ -41,12 +40,12 @@ export default () => {
           <Text onPress={() => navegacao.navigate('cadastro')}> CLIQUE AQUI</Text>
         </Text>
 
-        <Text style={style.textDescricao} onPress={() => alert('aaaaa')}>
+        <Text style={style.textDescricao} onPress={() => alert('EM CONTRUÇÃO')}>
           Esqueci minha senha
         </Text>
       </View>
 
-      <TouchableOpacity style={style.containerEntrar}>
+      <TouchableOpacity style={style.containerEntrar} onPress={() => navegacao.navigate('cadastro')}>
         <Text style={style.containerEntrarText}>Entrar</Text>
       </TouchableOpacity>
     </SafeAreaView>

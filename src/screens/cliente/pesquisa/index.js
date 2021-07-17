@@ -1,5 +1,4 @@
-/* eslint-disable prettier/prettier */
-import React, { useState } from 'react';
+import React, { useState,Component} from 'react';
 import { Text, SafeAreaView, TouchableOpacity, TextInput, View, Image, ScrollView } from 'react-native';
 import AbrirDrawer from './../../../components/abrirDrawer';
 import BotoesFooter from '../../../components/botoesFooter';
@@ -7,11 +6,13 @@ import style from './style';
 import imgBackground from './../../../assets/backhomecliente.jpeg';
 import imgPesq from './../../../assets/icon-pesquisa-home.png';
 import CalendarPicker from 'react-native-calendar-picker';
+import {useNavigation} from '@react-navigation/native';
 
 export default () => {
   const [data, setData] = useState();
   const [botaoPesca, setBotaoPesca] = useState(false);
   const [botaoPasseio, setBotaoPasseio] = useState(false);
+  const navigation = useNavigation();
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -36,7 +37,7 @@ export default () => {
           <Text style={style.tipoServico}>TIPO DE SERVIÇO</Text>
 
           <View style={style.containerTipoPesquisa}>
-            
+
             {botaoPesca ? //Verdadeiro
               <TouchableOpacity
                 onPress={() => setBotaoPesca(false)}
@@ -92,17 +93,18 @@ export default () => {
           </View>
           <View style={style.vpesquisar}>
 
-            <TouchableOpacity style={style.pesquisar}>
+            <TouchableOpacity style={style.pesquisar} onPress={() => navigation.navigate('ResultadoPesquisa')}>
               <Text style={style.botaoPasseioText, { color: '#fff' }}>PESQUISAR</Text>
             </TouchableOpacity>
 
           </View>
 
-          <BotoesFooter />
+
         </View>
 
 
       </ScrollView>
+      <BotoesFooter />
     </SafeAreaView>
   );
 };

@@ -25,7 +25,7 @@ export default () => {
           </TouchableOpacity>
 
           <TouchableOpacity
-            onPress={() => navigation.navigate('pesquisa cliente')}
+            onPress={() => navigation.navigate('PesquisaCliente')}
             style={style.botao}>
             <Image
               style={style.image}
@@ -46,6 +46,7 @@ export default () => {
             <Image
               style={style.image}
               source={require('../assets/icon-perfil.png')}
+
             />
             <Text style={style.textoBotao}>Perfil</Text>
           </TouchableOpacity>
@@ -63,18 +64,20 @@ const style = StyleSheet.create({
   },
   image: {
     alignSelf: 'center',
+    height: 25,
+    width: 25,
   },
   botao: {
     backgroundColor: '#70A6AE',
-    height: 80,
+    height: 65,
     padding: 10,
     borderRadius: 20,
-    width: 100,
+    width: 79,
     margin: 5,
   },
   textoBotao: {
     color: '#FFF',
-    fontSize: 15,
+    fontSize: 13,
     fontWeight: 'bold',
     alignSelf: 'center',
     marginTop: 5,

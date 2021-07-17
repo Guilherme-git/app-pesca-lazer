@@ -19,12 +19,23 @@ export default props => {
           marginRight: 20,
         }}>
         <TouchableOpacity onPress={() => navigation.openDrawer()}>
-          <Image source={AbrirDrawer} />
+          <Image source={AbrirDrawer}
+          style={{
+            width:20,
+            height:20,
+            alignContent:'flex-start',
+            alignItems:'flex-start',
+            tintColor:'#1c7acb',
+            marginLeft: 2,
+            flexDirection: 'row',
+          }}
+          />
         </TouchableOpacity>
 
         <View
           // eslint-disable-next-line react-native/no-inline-styles
           style={{
+            flexDirection: 'row',
             alignSelf: 'center',
             flex: 1,
             justifyContent: 'center',
@@ -33,9 +44,9 @@ export default props => {
           <Text
             // eslint-disable-next-line react-native/no-inline-styles
             style={{
-              color: '#4cf4fa',
+              color: '#1c7acb',
               fontWeight: 'bold',
-              fontSize: 18,
+              fontSize: 16,
             }}>
             {props.title}
           </Text>

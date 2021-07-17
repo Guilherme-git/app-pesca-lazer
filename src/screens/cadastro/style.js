@@ -52,10 +52,6 @@ const style = StyleSheet.create({
     color: '#FFF',
     fontWeight:'bold',
   },
-
-
-
-
   box: {
     width: 50,
     height: 50,
